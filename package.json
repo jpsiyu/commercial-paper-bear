@@ -1,0 +1,34 @@
+{
+  "name": "webapp",
+  "version": "1.0.0",
+  "main": "index.js",
+  "port": "80",
+  "sport": "81",
+  "scripts": {
+    "start": "node server/app.js",
+    "dev": "nodemon server/app.js -w server",
+    "cdev": "parcel watch ./client/public/index.html",
+    "cbuild": "parcel build ./client/public/index.html",
+    "cclear": "rm -rf .cache dist",
+    "dockercc": "docker rm -f $(docker ps -aq)",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "axios": "^0.18.0",
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4",
+    "react": "^16.6.3",
+    "react-dom": "^16.6.3",
+    "react-redux": "^6.0.1",
+    "react-transition-group": "^2.6.0",
+    "redux": "^4.0.1",
+    "ws": "^6.2.0"
+  },
+  "devDependencies": {
+    "parcel-bundler": "^1.11.0"
+  }
+}
